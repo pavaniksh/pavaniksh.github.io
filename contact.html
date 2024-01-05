@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIL: FOOD IS LIFE</title>
+  <link href="stylefil.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="fil.html">FIL: Food Is Life</a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="fil.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="videos.html">VIDEOS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    
+    <h1>Contact US</h1>
+  </section>
+  <!-----------------Contact---------------->
+  <section class="contact">
+    <h1>Watch Our Videos from <br>Anywhere in the World</h1>
+    <a href="" target="_blank" class="hero-btn">Watch Now</a>
+    </section>
+
+    <center><div class="comment-box">
+
+      <h3>Leave a message</h3>
+      <form class="comment-form" action="font-handler.php" method-"post">
+        <input type="text" name="name" placeholder="Enter Name">
+        <input type="email" name="email" placeholder="Enter Email">
+        <textarea rows="5" name="message" placeholder="Your Message"></textarea>
+        <button type="submit" class="hero-btn red-btn">Post Message</button>
+      </form>
+    </div></center>
+  
+  <!-----------------footer---------------->
+  <section>
+    <div class="footer">
+      <h4>About Us</h4>
+      <p>Subscribe to our YouTube channel and follow us on Instagram.</p>
+      <div class="icons">
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-youtube-play"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Food Is Life</p>
+  <!-------------------JavaScript---------------------->
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+    
+  </script>
+</body>
+
+</html>

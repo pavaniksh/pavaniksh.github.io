@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIL: FOOD IS LIFE</title>
+  <link href="stylefil.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="fil.html">FIL: Food Is Life</a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="fil.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="videos.html">VIDEOS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    
+    <h1>About Us</h1>
+  </section>
+  <!-----------------about us content---------------->
+        <section class="about">
+          <div class="row">
+            <div class="about-col">
+              <h3>Background</h3>
+              <p>We are from the Indian state of Maharashtra. The bulk of the recipes we provide our viewers are Maharashtrian specialties, but we also feature meals from north and south India as well as some incredible international cuisines with a dash of Indian flavor.</p>
+            </div>
+            <div class="about-col">
+              <h3>Instagram</h3>
+              <p>Our Instagram handle provides a brief synopsis of our recipes. In an Instagram post that we later made public on our YouTube channel, we give a sneak peek at the recipe.</p>
+              <a href="https://www.instagram.com/foodislife1670?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA==" target="_blank" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+              <h3>YouTube</h3>
+              <p>A full view of our recipes and dishes may be found on our channel. That channel has all of our recipes up to this point. Please visit our channel for additional details.</p>
+              <a href="https://www.youtube.com/@filfoodislife745" target="_blank" class="hero-btn red-btn">LEARN MORE</a>
+            </div>
+          </div>
+        </section>
+
+
+
+  
+  <!-----------------footer---------------->
+  <section>
+    <div class="footer">
+      <h4>About Us</h4>
+      <p>Subscribe to our YouTube channel and follow us on Instagram.</p>
+      <div class="icons">
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-youtube-play"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Food Is Life</p>
+  <!-------------------JavaScript---------------------->
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+    
+  </script>
+</body>
+
+</html>
